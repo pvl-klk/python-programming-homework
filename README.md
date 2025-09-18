@@ -8,6 +8,10 @@ I am **Pavel Kuliaka**, a student of the **Programming Technologies** program at
 
 **Email:** st140445@student.spbu.ru
 
+## Requirements
+
+* **Python 3.13** or higher
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
