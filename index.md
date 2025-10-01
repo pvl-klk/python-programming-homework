@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Education
 
 - A student of the **Programming Technologies** program at St. Petersburg State University.
