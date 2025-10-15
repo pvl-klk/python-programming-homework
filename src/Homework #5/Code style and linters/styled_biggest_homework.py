@@ -1,7 +1,7 @@
 # Функция проверки корректности размещения ферзей по вертикали и диагонали
 def is_safe_direction(
-        coordinate_1: tuple[int, int], coordinate_2: tuple[int, int]
-        ) -> bool:
+    coordinate_1: tuple[int, int], coordinate_2: tuple[int, int]
+) -> bool:
     if coordinate_1[1] == coordinate_2[1] or abs(
         coordinate_1[1] - coordinate_2[1]
     ) == abs(coordinate_1[0] - coordinate_2[0]):
