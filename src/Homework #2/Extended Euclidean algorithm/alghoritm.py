@@ -18,4 +18,4 @@ d, x, y = extended_gcd(54, 30)
 
 print(f"GCD(54, 30) = {d}")
 print(f"Coefficients: x = {x}, y = {y}")
-print(f"Factorization: 54*({x}) + 30*({y}) = {54*x + 30*y}")
+print(f"Factorization: 54*({x}) + 30*({y}) = {54 * x + 30 * y}")
