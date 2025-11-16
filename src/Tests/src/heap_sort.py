@@ -1,4 +1,4 @@
-def heapsort(array: list) -> list:
+def heap_sort(array: list) -> list:
     length = len(array)
     
     for index in range(length // 2 - 1, -1, -1):
