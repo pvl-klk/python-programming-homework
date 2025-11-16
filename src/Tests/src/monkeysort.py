@@ -9,6 +9,3 @@ def monekey_sort(array: list) -> list:
         else:
             return array
     
-
-
-print(monekey_sort([-4, 100, -30, 21, 42, -9, 0, 5]))

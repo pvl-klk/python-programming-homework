@@ -4,6 +4,3 @@ def bubble_sort(array: list) -> list:
             if array[index_1] > array[index_2]:
                 array[index_1], array[index_2] = array[index_2], array[index_1]
     return array
-
-
-print(bubble_sort([4, 1, -4, 3, 2, 9]))

@@ -24,5 +24,3 @@ def heapify(array: list, length: int, index: int) -> None:
     if largest != index:
         array[index], array[largest] = array[largest], array[index]
         heapify(array, length, largest)
-
-
