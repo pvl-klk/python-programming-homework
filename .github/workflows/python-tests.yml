@@ -2,9 +2,9 @@ name: Python Tests
 
 on:
   push:
-    branches-ignore: [ curry ]
+    branches: [ main, master ]
   pull_request:
-    branches-ignore: [ curry ]
+    branches: [ main, master ]
 
 jobs:
   test:
