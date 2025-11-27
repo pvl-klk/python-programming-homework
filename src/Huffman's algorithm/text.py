@@ -19,19 +19,19 @@ def generate_table(message: str) -> dict[str, str]:
 
     tree = nodes[0][0]
 
-    def traverse(node, current_code=''):
+    def traverse(node, current_code=""):
         if isinstance(node, str):
-            yield (node, current_code if current_code else '0')
+            yield (node, current_code if current_code else "0")
         else:
-            yield from traverse(node[0], current_code + '0')
-            yield from traverse(node[1], current_code + '1')
+            yield from traverse(node[0], current_code + "0")
+            yield from traverse(node[1], current_code + "1")
 
     return dict(traverse(tree))
 
 
 def encode(message: str) -> tuple[str, dict[str, str]]:
     table = generate_table(message)
-    result = ''
+    result = ""
     for symbol in message:
         result += table[symbol]
     return (result, table)
@@ -42,14 +42,14 @@ def decode(message: str, table: dict[str, str]) -> str:
     for key in table:
         reversed_table[table[key]] = key
 
-    current_code = ''
-    result = ''
+    current_code = ""
+    result = ""
 
     for bit in message:
         current_code += bit
 
         if current_code in reversed_table:
             result += reversed_table[current_code]
-            current_code = ''
+            current_code = ""
 
     return result
